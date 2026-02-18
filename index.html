@@ -145,6 +145,26 @@
             width: 100%;
         }
 
+        /* CV Download Button in Navbar */
+        nav a.cv-download {
+            background: var(--gradient-3);
+            padding: 0.6rem 1.5rem;
+            border-radius: 25px;
+            color: white !important;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
+        }
+
+        nav a.cv-download:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+        }
+
+        nav a.cv-download::after {
+            display: none;
+        }
+
         /* Hero Section */
         .hero {
             min-height: 100vh;
@@ -676,6 +696,11 @@
                 font-size: 0.8rem;
             }
 
+            nav a.cv-download {
+                font-size: 0.75rem;
+                padding: 0.5rem 1rem;
+            }
+
             section {
                 padding: 4rem 0;
             }
@@ -933,6 +958,7 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="Afsal-Resume.pdf" download="Afsal_Resume.pdf" class="cv-download">📄 Download CV</a></li>
             </ul>
         </div>
     </nav>
@@ -961,7 +987,9 @@
                     </div>
                     <div class="cta-buttons">
                         <a href="#projects" class="btn btn-primary">View Projects</a>
-                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                        <a href="resume.pdf" download="Afsal_Resume.pdf" class="btn btn-secondary">
+                            <span>📄</span> Download Resume
+                        </a>
                     </div>
                 </div>
 
@@ -977,7 +1005,7 @@
                             </p>
                             <div class="profile-stats">
                                 <div class="stat-item">
-                                    <div class="stat-number">3+</div>
+                                    <div class="stat-number">2+</div>
                                     <div class="stat-label">Years Exp</div>
                                 </div>
                                 <div class="stat-item">
@@ -985,7 +1013,7 @@
                                     <div class="stat-label">Projects</div>
                                 </div>
                                 <div class="stat-item">
-                                    <div class="stat-number">6+</div>
+                                    <div class="stat-number">10+</div>
                                     <div class="stat-label">Apps Built</div>
                                 </div>
                             </div>
@@ -1237,7 +1265,7 @@
                     <div class="contact-item">
                         <div class="contact-icon">📧</div>
                         <h4>Email</h4>
-                        <a href="mailto:afsal4771@gmail.com"><span class="__cf_email__" data-cfemail="c3a2a5b0a2aff7f4f4f283a4aea2aaafeda0acae">afsal4771@gmail.com</span></a>
+                        <a href="/cdn-cgi/l/email-protection#accdcadfcdc0989b9b9deccbc1cdc5c082cfc3c1"><span class="__cf_email__" data-cfemail="c3a2a5b0a2aff7f4f4f283a4aea2aaafeda0acae">[email&#160;protected]</span></a>
                     </div>
 
                     <div class="contact-item">
@@ -1251,13 +1279,19 @@
                         <h4>Location</h4>
                         <p style="color: var(--text-secondary);">Kochi, Kerala, India</p>
                     </div>
+
+                    <div class="contact-item" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2)); border: 2px solid var(--accent-primary);">
+                        <div class="contact-icon" style="background: var(--gradient-1);">📄</div>
+                        <h4 style="color: var(--accent-tertiary);">Download CV</h4>
+                        <a href="resume.pdf" download="Afsal_Resume.pdf" style="display: inline-block; margin-top: 0.5rem; padding: 0.6rem 1.5rem; background: var(--gradient-3); color: white; text-decoration: none; border-radius: 20px; font-weight: 600; transition: all 0.3s;">Get Resume PDF</a>
+                    </div>
                 </div>
 
                 <div class="social-links">
                     <a href="https://github.com/Afsal7359" target="_blank" class="social-link" title="GitHub">
                         <span>🔗</span>
                     </a>
-                    <a href="mailto:afsal4771@gmail.com" class="social-link" title="Email">
+                    <a href="/cdn-cgi/l/email-protection#3c5d5a4f5d50080b0b0d7c5b515d5550125f5351" class="social-link" title="Email">
                         <span>✉️</span>
                     </a>
                     <a href="tel:+917902367359" class="social-link" title="Phone">
@@ -1265,8 +1299,11 @@
                     </a>
                 </div>
 
-                <div style="margin-top: 3rem;">
-                    <a href="https://wa.me/917902367359" class="btn btn-primary">Send Me a Message</a>
+                <div style="margin-top: 3rem; display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+                    <a href="/cdn-cgi/l/email-protection#b0d1d6c3d1dc84878781f0d7ddd1d9dc9ed3dfdd" class="btn btn-primary">Send Me a Message</a>
+                    <a href="resume.pdf" download="Afsal_Resume.pdf" class="btn btn-secondary">
+                        <span>📄</span> Download Resume
+                    </a>
                 </div>
             </div>
         </div>
